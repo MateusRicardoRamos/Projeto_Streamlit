@@ -139,7 +139,7 @@ grafico_linha.update_layout(
 )
 st.plotly_chart(grafico_linha, width="stretch")
 
-coluna_radar, coluna_dispersao = st.columns(1)
+coluna_dispersao = st.columns(1)
 
 with coluna_dispersao:
     st.subheader("IDH inicial e variação")

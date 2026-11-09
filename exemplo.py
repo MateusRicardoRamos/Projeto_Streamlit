@@ -139,15 +139,7 @@ grafico_linha.update_layout(
 )
 st.plotly_chart(grafico_linha, width="stretch")
 
-coluna_radar, coluna_dispersao = st.columns(2)
-with coluna_radar:
-    st.subheader("Dimensões do IDH")
-    st.caption("Longevidade, Educação e Renda")
-    st.info(
-        "A tabela não informa os subíndices por dimensão. "
-        "Por isso, não é possível montar o gráfico de radar ou apontar qual dimensão "
-        "reduz mais o índice em cada estado."
-    )
+coluna_dispersao = st.columns(2)
 
 with coluna_dispersao:
     st.subheader("IDH inicial e variação")
